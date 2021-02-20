@@ -7,8 +7,8 @@ const string = `/* hi
  */
  #div{
     border: 1px solid black;
-    width: 200px;
-    height: 200px;
+    width: 400px;
+    height: 400px;
  }
  /* 接下来把 div 变成一个圆 */
  #div{
@@ -24,8 +24,8 @@ const string = `/* hi
 }
 /* 现在画圆上的点 */
 #div::before{
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -34,8 +34,8 @@ const string = `/* hi
     background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 20%, rgba(0,0,0,1) 20%, rgba(0,0,0,1) 100%);
 }
 #div::after{
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
